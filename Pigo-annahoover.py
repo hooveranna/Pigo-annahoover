@@ -5,8 +5,12 @@ __author__ = 'annahoover'
 
 class Pigo:
 
-    isMoving = False
-    servoPos = 90
+    ########
+    ######## BASIC STATUS AND METHODS
+    ########
+
+    status = {"ismoving": False, "servo": 90, "leftspeed": 175,
+               "rightspeed": 175}
 
     def __init__(self):
         print "beep beep"
@@ -22,6 +26,17 @@ class Pigo:
         while fwd() != 1:
             time.sleep(.1)
             print "Oh great, now I can't move. Heeeeeelp."
+
+
+    ########
+    ######## ADVANCED METHODS
+    ########
+
+
+########
+######## MAIN APP SARTS HERE
+########
+
 
 
 carl = Pigo()
